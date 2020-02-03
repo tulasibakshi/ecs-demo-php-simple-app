@@ -11,7 +11,7 @@ RUN yum install -y \
 RUN rm -rf /var/www/html/* && mkdir -p /var/www/html
 ADD src /var/www/html
 
-# Configure apache
+# Configuring apache
 RUN chown -R apache:apache /var/www
 ENV APACHE_RUN_USER apache
 ENV APACHE_RUN_GROUP apache
